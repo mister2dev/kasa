@@ -1,0 +1,30 @@
+.error-container {
+  .error404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 140px 0 50px 0;
+  }
+}
+
+.error-and-link {
+  .error-message {
+    color: $pink;
+    font-size: 36px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    color: $pink;
+    text-decoration: underline;
+    font-size: 18px;
+  }
+}

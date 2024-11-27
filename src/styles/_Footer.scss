@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  padding: 24px;
+  .footer_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    img {
+      width: 122px;
+    }
+  }
+  .legal {
+    color: white;
+    font-size: 24px;
+  }
+}

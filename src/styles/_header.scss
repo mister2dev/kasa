@@ -1,18 +1,17 @@
 .header-container {
-    margin: 30px 0 30px 0;
+  margin: 30px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  ul {
     display: flex;
     justify-content: space-between;
-    ul {
-        display: flex;
-        justify-content: space-between;
-        width: 200px;
-        font-size: 24px;
-        li a {
-            color: $pink;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+    width: 200px;
+    font-size: 24px;
+    li a {
+      color: $pink;
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
 }
-

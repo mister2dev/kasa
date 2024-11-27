@@ -1,0 +1,26 @@
+section.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 223px;
+  border-radius: 25px;
+  margin: 30px 0 30px 0;
+
+  &.banner-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../assets/accueil.png);
+  }
+  &.banner-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../assets/apropos.png);
+  }
+
+  h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+  }
+}

@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
+import Banner from "../components/Banner";
 
 const About = () => {
-  return (
-    <div>
-        About
-    </div>
-  );
+  return <Banner bannerType="about"></Banner>;
 };
 
 export default About;

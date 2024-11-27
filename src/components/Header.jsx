@@ -1,33 +1,30 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from "../assets/logo.svg"
+import Logo from '../assets/logo.svg';
 
 const Header = () => {
   return (
-    <div>
-        <div className="header-container">
-          <div className="logo">
-            <NavLink to="/">
-            <div className="logo">
-              <img src={Logo} alt='logo'/>
-            </div>
+    <header className="header-container">
+      <div className="logo">
+        <NavLink to="/">
+          <img src={Logo} alt="Logo de l'application" />
+        </NavLink>
+      </div>
+      <nav>
+        <ul>
+          <li className="accueil">
+            <NavLink to="/" exact="true" >
+              Accueil
             </NavLink>
-          </div>
-          <nav>
-            <ul>
-              <li className="accueil">
-              <NavLink to="/">Accueil
-              </NavLink>
-              </li>
-              <li className="apropos">
-                <NavLink to="about">
-                  A Propos
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
-        </div>
-    </div>
+          </li>
+          <li className="apropos">
+            <NavLink to="/about">
+              À Propos
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
