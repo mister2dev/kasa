@@ -1,21 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Datas from '../data/logements.json'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Card = () => {
+const Card = ({ id, cover, title }) => {
   return (
-    <div className='logements'>
-      {Datas.map((data) => {
-        const {id, cover, title} = data;
-        return (
-          <div className="fiche-logement" key={id}>
-            <Link to={{ pathname: "/Logement", search: "?_id="+id }}>
-                <img src={cover} alt={title} />
-                <h3>{title}</h3>
-            </Link>
-          </div>
-        )
-      })}
+    <div className="fiche-logement">
+      <Link to={`/logement/${id}`}>
+        <div className="card-image">
+          <img src={cover} alt={title} />
+        </div>
+        <h3>{title}</h3>
+      </Link>
     </div>
   );
 };

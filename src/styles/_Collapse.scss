@@ -1,0 +1,39 @@
+.collapse {
+  width: 1024px;
+  margin-bottom: 20px;
+  font-size: 24px;
+
+  .collapse_header {
+    border-radius: 5px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: $pink;
+    cursor: pointer;
+
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+    }
+    img {
+      width: 30px;
+    }
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .rotated {
+      transform: rotate(180deg);
+    }
+  }
+
+  .collapse_content {
+    padding: 15px;
+    background-color: #f6f6f6;
+    color: $pink;
+    line-height: 1.5;
+  }
+}

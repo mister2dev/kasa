@@ -1,0 +1,27 @@
+.fiche-logement {
+  width: calc((100% - 60px) / 3); /* 3 cards par ligne avec un gap de 20px */
+  max-width: 340px; /* Limite la largeur pour éviter qu'elles deviennent trop grandes */
+  height: 340px;
+  border-radius: 10px;
+  text-align: left;
+  flex-grow: 1; /* Permet une légère flexibilité */
+  background-image: linear-gradient(180deg, #ff6060, #ff6060, #ff6060, #833131);
+
+  h3 {
+    padding: 10px;
+  }
+  a {
+    color: white;
+    h3 {
+      font-weight: lighter;
+    }
+  }
+  .card-image {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 255px;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+}
