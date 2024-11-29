@@ -1,0 +1,55 @@
+.carrousel {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  border-radius: 25px;
+  height: 415px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  .carrousel-button {
+    background-color: rgba(255, 255, 255, 0.267);
+    border-radius: 10px;
+    position: absolute;
+    padding: 10px;
+    cursor: pointer;
+    &.prev {
+      left: 10px;
+    }
+    &.next {
+      right: 10px;
+    }
+    img {
+      width: 46px;
+      height: 80px;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.carrousel-indicators {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  gap: 8px;
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}

@@ -1,7 +1,53 @@
 import React, { useState } from "react";
+import arrow_right from "../assets/arrow_right.png";
+import arrow_left from "../assets/arrow_left.png";
 
-const Carrousel = () => {
-  return <div></div>;
+const Carrousel = ({ pictures }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Fonction pour aller à l'image suivante
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  // Fonction pour revenir à l'image précédente
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
+    );
+  };
+
+  return (
+    <div className="carrousel">
+      {/* Image courante */}
+      <div className="carrousel-image">
+        <img
+          src={pictures[currentIndex]}
+          alt={`Slide ${currentIndex + 1}`}
+          className="carrousel-img"
+        />
+      </div>
+      {/* Boutons de navigation */}
+      <button className="carrousel-button prev" onClick={prevSlide}>
+        <img src={arrow_left} alt="precedent" />
+      </button>
+      <button className="carrousel-button next" onClick={nextSlide}>
+        <img src={arrow_right} alt="suivant" />
+      </button>
+      {/* Indicateurs (points de navigation) */}
+      <div className="carrousel-indicators">
+        {pictures.map((_, index) => (
+          <button
+            key={index}
+            className={`indicator ${index === currentIndex ? "active" : ""}`}
+            onClick={() => setCurrentIndex(index)}
+          />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Carrousel;

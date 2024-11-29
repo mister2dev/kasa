@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import arrow_up from "../assets/arrow_up.png";
+import arrow_down from "../assets/arrow_down.png";
 
 const Collapse = ({ title, content }) => {
-  const [toggle, setToggle] = useState(false); // État pour gérer l'ouverture/fermeture
+  const [toggle, setToggle] = useState(true); // État pour gérer l'ouverture/fermeture
 
   return (
     <div className="collapse">
@@ -11,7 +11,7 @@ const Collapse = ({ title, content }) => {
         <span>{title}</span>
         {/* Rotation de l'icône basée sur l'état */}
         <img
-          src={arrow_up}
+          src={arrow_down}
           alt=""
           className={toggle ? "arrow rotated" : "arrow"}
         />
