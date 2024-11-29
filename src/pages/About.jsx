@@ -3,8 +3,7 @@ import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 
 const About = () => {
-  // Données pour les collapses
-  const collapses = [
+  const items = [
     {
       title: "Fiabilité",
       content:
@@ -29,12 +28,10 @@ const About = () => {
 
   return (
     <div>
-      {/* Bannière */}
       <Banner bannerType="about" />
 
-      {/* Conteneur des collapses */}
       <div className="about">
-        {collapses.map((item, index) => (
+        {items.map((item, index) => (
           <Collapse key={index} title={item.title} content={item.content} />
         ))}
       </div>

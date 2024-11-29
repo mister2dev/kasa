@@ -1,6 +1,7 @@
 .footer {
   background-color: black;
   padding: 24px;
+  margin: 0 -16px;
   .footer_img {
     display: flex;
     justify-content: center;
@@ -10,8 +11,14 @@
       width: 122px;
     }
   }
-  .legal {
+  small {
     color: white;
     font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer small {
+    font-size: 12px;
   }
 }

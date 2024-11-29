@@ -6,6 +6,12 @@ div.gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  padding: 40px;
+  padding: 40px 0;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  div.gallery {
+    background-color: #ffffff;
+  }
 }

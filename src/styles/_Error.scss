@@ -1,30 +1,45 @@
 .error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .error404 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 140px 0 50px 0;
+    margin: 140px 50px 50px 50px;
+    img {
+      width: 100%;
+    }
+  }
+  .error-and-link {
+    .error-message {
+      color: $pink;
+      font-size: 36px;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 330px;
+      color: $pink;
+      text-decoration: underline;
+      font-size: 18px;
+    }
   }
 }
 
-.error-and-link {
-  .error-message {
-    color: $pink;
-    font-size: 36px;
-  }
-  p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-  }
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 330px;
-    color: $pink;
-    text-decoration: underline;
-    font-size: 18px;
+@media (max-width: 768px) {
+  .error-container {
+    .error-and-link {
+      .error-message {
+        font-size: 18px;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
   }
 }
