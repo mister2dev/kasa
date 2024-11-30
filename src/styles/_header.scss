@@ -2,6 +2,7 @@
   margin: 30px 0 30px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   .logo {
     padding-right: 50px;
     img {
@@ -18,6 +19,16 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    ul {
+      text-transform: uppercase;
+      font-size: 12px;
+      width: 130px;
     }
   }
 }

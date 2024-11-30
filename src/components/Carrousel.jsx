@@ -28,6 +28,16 @@ const Carrousel = ({ pictures }) => {
           alt={`Slide ${currentIndex + 1}`}
           className="carrousel-img"
         />
+        {/* Indicateurs (points de navigation) */}
+        <div className="carrousel-indicators">
+          {pictures.map((_, index) => (
+            <button
+              key={index}
+              className={`indicator ${index === currentIndex ? "active" : ""}`}
+              onClick={() => setCurrentIndex(index)}
+            />
+          ))}
+        </div>
       </div>
       {/* Boutons de navigation */}
       <button className="carrousel-button prev" onClick={prevSlide}>
@@ -36,16 +46,6 @@ const Carrousel = ({ pictures }) => {
       <button className="carrousel-button next" onClick={nextSlide}>
         <img src={arrow_right} alt="suivant" />
       </button>
-      {/* Indicateurs (points de navigation) */}
-      <div className="carrousel-indicators">
-        {pictures.map((_, index) => (
-          <button
-            key={index}
-            className={`indicator ${index === currentIndex ? "active" : ""}`}
-            onClick={() => setCurrentIndex(index)}
-          />
-        ))}
-      </div>
     </div>
   );
 };

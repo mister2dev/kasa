@@ -52,7 +52,8 @@ const Housing = () => {
                   key={"star-" + element}
                   className={element <= starsNb ? "span1" : "span2"}
                 >
-                  ★
+                  {/* ★ */}
+                  <i className="fas fa-star"></i>
                 </span>
               );
             })}

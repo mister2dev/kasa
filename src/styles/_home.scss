@@ -13,5 +13,8 @@ div.gallery {
 @media (max-width: 768px) {
   div.gallery {
     background-color: #ffffff;
+    padding: 0;
+    margin: 20px 0;
+    gap: 20px;
   }
 }

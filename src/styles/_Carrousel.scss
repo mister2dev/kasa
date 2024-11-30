@@ -1,12 +1,14 @@
 .carrousel {
   position: relative;
-  width: 100%;
-  max-width: 1240px;
   border-radius: 25px;
   height: 415px;
   display: flex;
   align-items: center;
   overflow: hidden;
+  .carrousel-image img {
+    width: 100%;
+    border-radius: 25px;
+  }
 
   .carrousel-button {
     background-color: rgba(255, 255, 255, 0.267);
@@ -50,6 +52,15 @@
 
     &.active {
       opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carrousel {
+    max-height: 346px;
+    .carrousel-image {
+      position: relative;
     }
   }
 }

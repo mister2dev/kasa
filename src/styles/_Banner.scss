@@ -21,6 +21,8 @@ section.banner {
       url(../assets/accueil.png);
   }
   &.banner-about {
+    aspect-ratio: auto;
+    height: 217px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url(../assets/apropos.png);
   }
