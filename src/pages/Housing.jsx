@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Datas from "../data/logements.json";
 import { useParams, Navigate } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 
 const Housing = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll vers le haut au chargement du composant
+  }, []);
+
   const { id } = useParams(); // Récupérer l'ID depuis l'URL
   const housing = Datas.find((data) => data.id === id); // Trouver le logement correspondant
   const stars = [1, 2, 3, 4, 5];
