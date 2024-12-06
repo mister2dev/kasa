@@ -1,9 +1,7 @@
 import React from "react";
 
-const Banner = ({ children, bannerType }) => {
-  const bannerClass = bannerType === "about" ? "banner-about" : "banner-home";
-
-  return <section className={`banner ${bannerClass}`}>{children}</section>;
+const Banner = ({ children, type }) => {
+  return <section className={`banner banner-${type}`}>{children}</section>;
 };
 
 export default Banner;

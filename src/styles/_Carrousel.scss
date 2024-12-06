@@ -39,28 +39,22 @@
   bottom: 15px;
   width: 100%;
   gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
 
   .indicator {
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
-
-    &.active {
-      opacity: 1;
-    }
+    color: white;
   }
 }
 
 @media (max-width: 768px) {
   .carrousel {
-    max-height: 346px;
+    max-height: 255px;
     .carrousel-image {
       position: relative;
+    }
+    .carrousel-indicators {
+      display: none;
     }
   }
 }

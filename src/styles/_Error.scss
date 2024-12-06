@@ -1,16 +1,16 @@
 .error-container {
+  color: $pink;
   display: flex;
   flex-direction: column;
   align-items: center;
   .error404 {
-    margin: 140px 50px 50px 50px;
-    img {
-      width: 100%;
-    }
+    font-size: 288px;
+    font-weight: 700;
+    margin-top: 60px;
   }
   .error-and-link {
     .error-message {
-      color: $pink;
+      font-weight: 500;
       font-size: 36px;
     }
     p {
@@ -33,7 +33,13 @@
 
 @media (max-width: 768px) {
   .error-container {
+    .error404 {
+      font-size: 96px;
+    }
     .error-and-link {
+      p {
+        width: 260px;
+      }
       .error-message {
         font-size: 18px;
       }

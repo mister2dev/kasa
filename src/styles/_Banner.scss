@@ -8,7 +8,7 @@ section.banner {
   max-height: 223px;
   aspect-ratio: 50/9;
   border-radius: 25px;
-  margin: 30px 0 30px 0;
+  margin: 40px 0 30px 0;
   padding: 20px;
   h1 {
     color: white;
@@ -30,9 +30,10 @@ section.banner {
 
 @media (max-width: 768px) {
   section.banner {
+    margin: 20px 0 20px 0;
     border-radius: 10px;
     h1 {
-      font-size: 26px;
+      font-size: 24px;
       text-align: left;
     }
   }

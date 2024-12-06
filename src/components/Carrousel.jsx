@@ -30,13 +30,9 @@ const Carrousel = ({ pictures }) => {
         />
         {/* Indicateurs (points de navigation) */}
         <div className="carrousel-indicators">
-          {pictures.map((_, index) => (
-            <button
-              key={index}
-              className={`indicator ${index === currentIndex ? "active" : ""}`}
-              onClick={() => setCurrentIndex(index)}
-            />
-          ))}
+          <p className="indicator">
+            {currentIndex + 1}/{pictures.length}
+          </p>
         </div>
       </div>
       {/* Boutons de navigation */}

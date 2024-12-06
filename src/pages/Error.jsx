@@ -1,12 +1,11 @@
 import React from "react";
-import Error404 from "../assets/404.png";
 import { Link } from "react-router-dom";
 
 const Error = () => {
   return (
     <div className="error-container">
       <div className="error404">
-        <img src={Error404} alt="erreur 404" />
+        <p>404</p>
       </div>
       <div className="error-and-link">
         <p className="error-message">

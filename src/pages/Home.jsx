@@ -6,7 +6,7 @@ import Datas from "../data/logements.json";
 const Home = () => {
   return (
     <div>
-      <Banner bannerType="home">
+      <Banner type="home">
         <h1>Chez vous, partout et ailleurs</h1>
       </Banner>
       <div className="gallery">
