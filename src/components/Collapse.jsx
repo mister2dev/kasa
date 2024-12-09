@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import arrow_down from "../assets/arrow_down.png";
 
 const Collapse = ({ title, content }) => {
-  const [toggle, setToggle] = useState(true); // État pour gérer l'ouverture/fermeture
+  const [toggle, setToggle] = useState(false); // État pour gérer l'ouverture/fermeture
 
   return (
     <div className="collapse">
