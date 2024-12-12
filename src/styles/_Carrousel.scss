@@ -50,6 +50,10 @@
 @media (max-width: 768px) {
   .carrousel {
     max-height: 255px;
+    .carrousel-button img {
+      width: 12px;
+      height: 20px;
+    }
     .carrousel-image {
       position: relative;
     }
